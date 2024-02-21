@@ -1,9 +1,17 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home, About } from "./pages/index";
 import "./App.css";
-import TimeTable from "./components/TimeTable/TimeTable";
+
+
 
 function App() {
   return (
-    <TimeTable/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   );
 }
 
