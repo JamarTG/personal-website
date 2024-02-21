@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
 import Home from "./pages/Home";
 import "./App.css";
 
@@ -6,12 +7,14 @@ import Navbar from "./components/Navbar";
 import PageNotFound from "./components/404";
 
 function App() {
+  const [showNav, setShowNav] = useState(true);
+
   return (
     <Router>
-      <Navbar />
+      <Navbar showNav={showNav} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="*" element={<PageNotFound setShowNav={setShowNav} />} />
       </Routes>
     </Router>
   );
