@@ -5,6 +5,7 @@ import JammyInfo from "../components/JammyInfo";
 const Home = () => {
   return (
     <main className="main-content">
+      
       <HomeCatGif />
       <JammyInfo />
       <TechList />
