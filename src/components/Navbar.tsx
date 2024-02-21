@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import ResumeDownloadButton from "./ResumeViewButton";
+import ResumeButton from "./ResumeButton";
 
 const Navbar = () => {
   return (
@@ -10,19 +10,9 @@ const Navbar = () => {
             Home
           </NavLink>
         </li>
-        <li className="nav-item">
-          <NavLink to="/about" className="nav-link">
-            About
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink to="/contact" className="nav-link">
-            Contact
-          </NavLink>
-        </li>
 
         <li className="nav-item">
-          <ResumeDownloadButton className="nav-link" />
+          <ResumeButton className="nav-link" />
         </li>
       </ul>
     </nav>

@@ -1,7 +1,7 @@
 interface ResumeViewButtonProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement> {}
 
-const ResumeViewButton = (props: ResumeViewButtonProps) => {
+const ResumeButton = (props: ResumeViewButtonProps) => {
   return (
     <a
       href="/resume.pdf"
@@ -15,4 +15,4 @@ const ResumeViewButton = (props: ResumeViewButtonProps) => {
   );
 };
 
-export default ResumeViewButton;
+export default ResumeButton;
