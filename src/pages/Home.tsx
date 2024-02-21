@@ -8,6 +8,8 @@ const Home = () => {
       <HomeCatGif />
       <JammyInfo />
       <TechList />
+
+     
     </main>
   );
 };
