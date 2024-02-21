@@ -1,9 +1,9 @@
-import GiphyEmbed from "../components/GiphyCat";
+import HomeCatGif from "../components/HomeCatGif";
 
 const Home = () => {
   return (
     <main className="main-content">
-      <GiphyEmbed /> 
+      <HomeCatGif /> 
       <h1>  Jamari McFarlane</h1>
       <p>
         I'm a Computer Science @ UWI who likes JSX and is currently working remotely as a software engineer at a FinTech startup
