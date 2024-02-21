@@ -38,28 +38,24 @@ body {
   background-color: #333;
 }
 
-
 .main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
 }
 
 .main-content h1 {
-    padding: 0;
-    margin: 0;
-    font-size:50px;
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
 }
 
 .main-content p {
-    color: grey;
-    font-size:15 ;
-    text-align: center;
-    width: 500px;
-    line-height: 30px;
+  color: grey;
+  font-size: 15;
+  text-align: center;
+  width: 500px;
+  line-height: 20px;
 }
-
-
-
