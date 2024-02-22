@@ -92,7 +92,7 @@ body {
 .main-content p {
   font-size: 1em; /* Responsive font size based on viewport width */
   text-align: center;
-  max-width: 90vw;
+  max-width: 70vw;
   width: 38vw;
 }
 
@@ -176,7 +176,7 @@ body {
 
 .navbar {
   margin-top: 2%;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   display: flex;
   justify-content: flex-end; /* Changed from end */
   align-items: center;
@@ -236,12 +236,13 @@ body {
   }
 
   .main-content h1 {
-    font-size: 50px; /* Responsive font size based on viewport width */
+    font-size: 40px; /* Responsive font size based on viewport width */
     text-align: center;
   }
   .main-content p {
     font-size: 16px; /* Responsive font size based on viewport width */
     text-align: center;
+    width: ;
   }
   section {
     display: flex;
