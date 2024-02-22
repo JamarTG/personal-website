@@ -160,4 +160,7 @@ body {
     font-size: 2em; 
     text-align: center;
   }
+  .tech-list {
+    flex-direction: row;
+  }
 }
