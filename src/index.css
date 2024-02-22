@@ -3,14 +3,19 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   color: #333;
+  background-color: #fff;
+  margin: 0;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar {
-  margin-top: 2rem;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   display: flex;
-  justify-content: flex-end;
-  gap: 200px;
+  justify-content: end;
+  align-items: center;
 }
 
 .nav-menu {
@@ -18,24 +23,25 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: flex-end;
 }
 
 .nav-item {
-  display: inline-block;
-  margin-right: 20px;
+  margin-right: 1rem;
 }
 
 .nav-link {
   color: #333;
   text-decoration: none;
-  font-size: 16px;
-  padding: 7px 20px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 2px;
 }
 
 .nav-link.active {
   color: #eee;
   background-color: #333;
+  border-radius: 50px;
 }
 
 .main-content {
@@ -43,25 +49,38 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 90vw;
   height: 80vh;
-  transition: width 4s ease;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
 }
 
+.tech-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .main-content h1 {
-  padding: 0;
-  margin: 0;
-  font-size: 50px;
+  font-size: 3rem;
   text-align: center;
-  width: 90vh;
 }
 
 .main-content p {
-  color: grey;
-  font-size: 15;
+  font-size: 1.2rem;
   text-align: center;
-  width: 500px;
-  line-height: 20px;
-  margin: 20px;
+  width: 100vh;
 }
 
 .tech-list {
@@ -69,6 +88,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   background-color: #333;
   padding: 5px 30px;
   gap: 20px;
@@ -76,19 +96,19 @@ body {
 }
 
 .return-btn {
-  cursor: default;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #333;
   color: #eee;
-  padding: 10px 30px;
-  gap: 20px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
 }
 
 .tech-list img {
-  width: 25px;
+  width: 1.5rem;
 }
+
 .stack {
   display: flex;
   justify-content: center;
@@ -97,11 +117,36 @@ body {
 }
 
 .cat-gif {
-  width: 250px;
-  height: 250px;
-  opacity: 1;
-  transition: opacity 3s ease;
+  width: 100%;
+  height: auto;
 }
-.loaded {
+
+.navbar {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end; /* Changed from end */
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+
+  height: 80%;
   opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-content p {
+    width: 100vh;
+  }
 }

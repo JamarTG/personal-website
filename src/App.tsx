@@ -3,20 +3,19 @@ import Home from "./pages/Home";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import PageNotFound from "./components/404";
-import { useState } from "react";
+
 
 function App() {
-  const [showNav, setShowNav] = useState(true);
   
   return (
     <Router>
-      <Navbar showNav={showNav} />
+      <Navbar />
       <Routes>
         <Route
           path="/"
           element={<Home />}
         />
-        <Route path="*" element={<PageNotFound setShowNav={setShowNav} />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Router>
   );
