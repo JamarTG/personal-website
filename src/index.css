@@ -52,6 +52,7 @@ body {
   margin: 0;
   font-size: 50px;
   text-align: center;
+  width: 90vh;
 }
 
 .main-content p {
@@ -83,7 +84,6 @@ body {
   color: #eee;
   padding: 10px 30px;
   gap: 20px;
-
 }
 
 .tech-list img {
@@ -94,4 +94,14 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.cat-gif {
+  width: 250px;
+  height: 250px;
+  opacity: 1;
+  transition: opacity 3s ease;
+}
+.loaded {
+  opacity: 0;
 }

@@ -1,6 +1,10 @@
+
+
 const HomeCatGif = () => {
+
+  
   return (
-    <div style={{ width: "200px" }}>
+    <div className="cat-gif" style={{ width: "200px" }}>
       <img
         src="https://media.giphy.com/media/lttzw7C900LaDDHw1F/giphy.gif"
         alt="Home Cat Gif"
