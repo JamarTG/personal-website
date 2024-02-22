@@ -5,7 +5,8 @@ const PageNotFound = () => {
   const navigate = useNavigate();
 
   return (
-    <main className="main-content">
+    <main className="fourofour main-content">
+      <h1>I know you're lost...</h1>
       <div
         style={{
           display: "flex",
@@ -15,7 +16,7 @@ const PageNotFound = () => {
         }}
       >
         <Four04CatGif />
-        <h2>I know you're lost...</h2>
+        
         <br />
       </div>
       <a onClick={() => navigate("/")} className="return-btn">

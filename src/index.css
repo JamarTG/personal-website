@@ -151,6 +151,8 @@ body {
   flex-direction: column;
 }
 
+
+
 .stack {
   display: flex;
   justify-content: center;
@@ -182,6 +184,18 @@ body {
   animation: fadeIn 2s ease forwards;
 }
 
+.fourofour {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90vw;
+  height: 80vh;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -198,9 +212,12 @@ body {
     text-align: center;
   }
   .stack {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+  
   }
   .tech-list {
     flex-direction: column;
+    width: 100px;
   }
 }
