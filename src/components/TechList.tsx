@@ -8,8 +8,16 @@ const TechList = () => {
   };
 
   return (
-    <div className="tech-list">
-      <h2 onClick={handleClick} style={{ color: "white", fontSize: "15px" }}>
+    <div
+      className="tech-list"
+    >
+      <h2
+        onClick={handleClick}
+        style={{
+          color: "white",
+          fontSize: "15px",
+        }}
+      >
         {showStack ? "Hide " : "Show "} {"Stack?"}
       </h2>
 

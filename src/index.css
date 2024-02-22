@@ -79,9 +79,11 @@ body {
 }
 
 .main-content p {
-  font-size: 2vw; /* Responsive font size based on viewport width */
+  font-size: 1em; /* Responsive font size based on viewport width */
   text-align: center;
-  max-width: 90vw; /* Responsive width based on viewport width */
+  max-width: 90vw;
+  width: 38vw;
+
 }
 
 .tech-list {
@@ -91,9 +93,11 @@ body {
   align-items: center;
   flex-direction: row;
   background-color: #333;
-  padding: 5px 30px;
+  padding: 0px 10px;
   gap: 20px;
-  border-radius: 50px;
+
+  max-width: 95%;
+ 
 }
 
 .return-btn {
@@ -149,5 +153,11 @@ body {
 
   .main-content p {
     width: 100vh;
+    font-size: 13px;
+  }
+
+  .main-content h1 {
+    font-size: 2em; 
+    text-align: center;
   }
 }
