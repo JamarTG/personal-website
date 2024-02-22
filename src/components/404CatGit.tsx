@@ -4,7 +4,7 @@ const Four04CatGif = () => {
       <img
         src="https://media.giphy.com/media/ES4Vcv8zWfIt2/giphy.gif"
         alt="404 Cat Gif"
-        width="100"
+        width="200"
         height="200"
       />
      
