@@ -72,15 +72,16 @@ body {
     opacity: 1;
   }
 }
+
 .main-content h1 {
-  font-size: 3rem;
+  font-size: 4vw; /* Responsive font size based on viewport width */
   text-align: center;
 }
 
 .main-content p {
-  font-size: 1.2rem;
+  font-size: 2vw; /* Responsive font size based on viewport width */
   text-align: center;
-  width: 100vh;
+  max-width: 90vw; /* Responsive width based on viewport width */
 }
 
 .tech-list {
