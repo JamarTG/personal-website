@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import PageNotFound from "./components/404";
-import { useState, lazy, useEffect } from "react";
+import { useState } from "react";
 
 function App() {
   const [showNav, setShowNav] = useState(true);
