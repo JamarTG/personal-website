@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
 p {
   font-family: "Indie Flower", cursive;
 }
-
 
 body {
   font-family: "Indie Flower", cursive;
@@ -18,7 +17,6 @@ body {
 }
 
 .navbar {
-
   display: flex;
   justify-content: end;
   align-items: center;
@@ -63,10 +61,9 @@ body {
 
 .main-content section {
   display: flex;
-  flex-direction:column ;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .tech-list {
@@ -98,7 +95,6 @@ body {
   max-width: 90vw;
   width: 38vw;
 }
-
 
 .slide-in {
   animation: slideIn 10s forwards;
@@ -220,10 +216,7 @@ body {
     font-size: 13px;
   }
 
-  .main-content h1 {
-    font-size: 1.2em;
-    text-align: center;
-  }
+  
   .stack {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -240,6 +233,19 @@ body {
 
   section {
     height: 90vh;
+  }
+
+  .main-content h1 {
+    font-size: 50px; /* Responsive font size based on viewport width */
+    text-align: center;
+  }
+  .main-content p {
+    font-size: 16px; /* Responsive font size based on viewport width */
+    text-align: center;
+  }
+  section {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
  
