@@ -61,6 +61,14 @@ body {
   animation: fadeIn 2s ease forwards;
 }
 
+.main-content section {
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .tech-list {
   display: flex;
   justify-content: center;
@@ -229,4 +237,10 @@ body {
   .tech-list img {
     width: 30px;
   }
+
+  section {
+    height: 90vh;
+  }
+
+ 
 }
