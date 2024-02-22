@@ -151,8 +151,6 @@ body {
   flex-direction: column;
 }
 
-
-
 .stack {
   display: flex;
   justify-content: center;
@@ -185,7 +183,6 @@ body {
 }
 
 .fourofour {
-
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -213,11 +210,15 @@ body {
   }
   .stack {
     display: grid;
-    grid-template-columns: repeat(4,1fr) ;
-  
+    grid-template-columns: repeat(4, 1fr);
   }
+
   .tech-list {
     flex-direction: column;
     width: 100px;
+  }
+
+  .tech-list img {
+    width: 30px;
   }
 }
