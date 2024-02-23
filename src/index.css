@@ -1,5 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
 
 * {
   color: #575757;
@@ -22,11 +45,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-p {
-  font-family: "Indie Flower", cursive;
-}
+
 body {
-  font-family: "Indie Flower", cursive;
+  font-family: "Space Mono", monospace;
+
   color: #333;
   background-color: #fff;
 
@@ -96,6 +118,7 @@ body {
   font-size: 4vw;
   text-align: center;
   color: #575757;
+
 }
 .main-content p {
   font-size: 1em;
@@ -158,11 +181,13 @@ body {
 }
 svg {
   padding: 10px;
+
 }
 .tech-list img {
   width: 1.5rem;
   display: flex;
   flex-direction: column;
+
 }
 .stack {
   display: flex;
@@ -200,6 +225,42 @@ svg {
   height: 80vh;
   animation: fadeIn 2s ease forwards;
 }
+
+.social-stick {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000; 
+}
+
+.social-link {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+.social-link:last-child {
+  margin-right: 0;
+}
+
+i {
+  opacity: 0.6; 
+  transition: opacity 0.3s ease;
+  font-size: 30px;
+}
+i:hover {
+  opacity: 1;
+
+}
+
+.social-stick {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.social-stick a {
+  text-decoration: none;
+}
+
 @keyframes scaleIn {
   from {
     transform: scale(0.3);
@@ -242,8 +303,8 @@ svg {
   }
   .main-content h1 {
     font-size: 40px;
-
     text-align: center;
+
   }
   .main-content p {
     font-size: 16px;
@@ -253,9 +314,5 @@ svg {
   section {
     display: flex;
     flex-direction: column-reverse;
-  }
-
-  body {
-    overflow: hidden !important;
   }
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import react from '.../public/react.svg';
+
 const TechList = () => {
   const [showStack, setShowStack] = useState<boolean>(false);
 
@@ -58,55 +58,27 @@ const TechList = () => {
 
       {showStack ? (
         <div className="stack">
-          <img
-            title="react"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-          />
+          <i className="devicon-react-original" title="React"></i>
 
-          
-          <img
-            title="typescript"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-          />
+          <i className="devicon-typescript-plain" title="TypeScript"></i>
 
-          <img
-            title="flask"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
-          />
+          <i className="devicon-flask-original" title="Flask"></i>
 
-          <img
-            title="css"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-          />
+          <i className="devicon-css3-plain" title="CSS3"></i>
 
-          <img
-            title="tailwindcss"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-          />
+          <i className="devicon-tailwindcss-original" title="Tailwind CSS"></i>
 
-          <img
-            title="nodejs"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-          />
+          <i className="devicon-nodejs-plain" title="Node.js"></i>
 
-          <img
-            title="express"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
-          />
 
-          <img
-            title="mongodb"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-          />
-          <img
-            title="graphql"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg"
-          />
 
-          <img
-            title="python"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
-          />
+          <i className="devicon-express-original" title="Express"></i>
+
+          <i className="devicon-mongodb-plain" title="MongoDB"></i>
+
+          <i className="devicon-graphql-plain" title="GraphQL"></i>
+
+          <i className="devicon-python-plain" title="Python"></i>
         </div>
       ) : null}
     </div>
