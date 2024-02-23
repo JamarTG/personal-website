@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import react from '.../public/react.svg';
 const TechList = () => {
   const [showStack, setShowStack] = useState<boolean>(false);
 
@@ -62,6 +62,8 @@ const TechList = () => {
             title="react"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
           />
+
+          
           <img
             title="typescript"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"

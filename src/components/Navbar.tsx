@@ -15,6 +15,7 @@ const Navbar = () => {
           <li className="nav-item">
             <ResumeButton className="nav-link" />
           </li>
+          
         </ul>
       </nav>
     </>
