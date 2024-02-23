@@ -309,6 +309,7 @@ i:hover {
   .navbar {
     flex-direction: column;
     align-items: center;
+    z-index: 100;
   }
   .main-content p {
     height: 10vh;
