@@ -1,7 +1,7 @@
 import HomeCatGif from "../components/HomeCatGif";
 import TechList from "../components/TechList";
 import JammyInfo from "../components/Info";
-import SocialIcons from "../components/SocialIcons";import SocialIcons from "../components/SocialIcons";
+import SocialIcons from "../components/SocialIcons";
 
 
 const Home = () => {
