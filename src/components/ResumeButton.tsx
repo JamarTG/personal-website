@@ -9,8 +9,9 @@ const ResumeButton = (props: ResumeViewButtonProps) => {
       target="_blank"
       rel="noopener noreferrer"
       {...props}
+      style={{textDecoration: "underline"}}
     >
-      View Resume
+     View Resume
     </a>
   );
 };
