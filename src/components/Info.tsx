@@ -1,9 +1,7 @@
 const JammyInfo = () => {
   return (
-    <div>
-      <div className="typing-effect">
-        <h1>Jamari McFarlane</h1>
-      </div>
+    <div className="info">
+      <h1>Jamari McFarlane</h1>
 
       <p>
         I'm a Year II Computer Science Student @ UWI who likes React &
