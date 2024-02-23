@@ -50,6 +50,7 @@
 i {
   font-family: "BioRhyme", serif;
 }
+
 body {
   font-family: "BioRhyme", serif;
 
@@ -128,6 +129,7 @@ body {
   font-size: 4vw;
   text-align: center;
   color: #575757;
+
 }
 
 .main-content p {
@@ -190,11 +192,13 @@ body {
 }
 svg {
   padding: 10px;
+
 }
 .tech-list img {
   width: 1.5rem;
   display: flex;
   flex-direction: column;
+
 }
 .stack,.projects {
   display: flex;
@@ -334,6 +338,7 @@ i:hover {
   .main-content h1 {
     font-size: 40px;
     text-align: center;
+
   }
   .main-content p {
     font-size: 16px;
