@@ -69,6 +69,7 @@ body {
   justify-content: end;
   align-items: center;
   width: 90%;
+  color: #eee;
 
 }
 .nav-menu {
@@ -218,6 +219,7 @@ small:hover {
   /* padding: 0rem 0rem; */
   display: flex;
   justify-content: flex-end;
+  color: #eee;
 
   align-items: center;
 }
