@@ -1,11 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import Four04CatGif from "../components/404CatGit";
+import Navbar from "../components/Navbar";
 
 const PageNotFound = () => {
   const navigate = useNavigate();
 
   return (
     <main className="fourofour main-content">
+      <Navbar />
       <h1>I know you're lost...</h1>
       <div
         style={{
