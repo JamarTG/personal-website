@@ -1,5 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap");
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
 
 * {
   color: #575757;
@@ -22,14 +46,16 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-p {
-  font-family: "Indie Flower", cursive;
+
+i {
+  font-family: "BioRhyme", serif;
 }
 body {
-  font-family: "Indie Flower", cursive;
+  font-family: "BioRhyme", serif;
+
   color: #333;
   background-color: #fff;
-
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -39,6 +65,8 @@ body {
   display: flex;
   justify-content: end;
   align-items: center;
+  width: 90%;
+  background-color: transparent;
 }
 .nav-menu {
   list-style-type: none;
@@ -56,19 +84,23 @@ body {
   border-radius: 2px;
 }
 .nav-link.active {
-  color: #333;
+  color: #eee;
   background-color: #d79df5;
   border-radius: 50px;
+}
+
+.nav-link:hover {
+  cursor: pointer;
 }
 .main-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 85vw;
-
+  width: 100vw;
   opacity: 0;
   animation: fadeIn 2s ease forwards;
+
 }
 .main-content section {
   display: flex;
@@ -92,16 +124,16 @@ body {
     opacity: 1;
   }
 }
-.main-content h1 {
+ .main-content h1 {
   font-size: 4vw;
   text-align: center;
   color: #575757;
 }
+
 .main-content p {
   font-size: 1em;
   text-align: center;
-  max-width: 70vw;
-  width: 38vw;
+  width: 50vw;
 }
 .slide-in {
   animation: slideIn 10s forwards;
@@ -164,11 +196,15 @@ svg {
   display: flex;
   flex-direction: column;
 }
-.stack {
+.stack,.projects {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+small:hover {
+  color:purple;
 }
 .cat-gif {
   width: 100%;
@@ -186,11 +222,15 @@ svg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 90vw;
   height: 60%;
   opacity: 0;
   animation: fadeIn 2s ease forwards;
+
 }
+
+
 .fourofour {
   display: flex;
   flex-direction: column;
@@ -200,6 +240,51 @@ svg {
   height: 80vh;
   animation: fadeIn 2s ease forwards;
 }
+
+.social-stick {
+  
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.social-link:last-child {
+  margin-right: 0;
+}
+
+i {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  font-size: 30px;
+}
+i:hover {
+  opacity: 1;
+}
+
+.social-stick {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.social-stick a {
+  text-decoration: none;
+}
+
+.info  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @keyframes scaleIn {
   from {
     transform: scale(0.3);
@@ -222,12 +307,18 @@ svg {
     align-items: center;
   }
   .main-content p {
-    width: 100vh;
+    height: 10vh;
+    width: 90vw;
     font-size: 13px;
   }
   .stack {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
   }
 
   .tech-list {
@@ -242,12 +333,10 @@ svg {
   }
   .main-content h1 {
     font-size: 40px;
-
     text-align: center;
   }
   .main-content p {
     font-size: 16px;
-
     text-align: center;
   }
   section {
@@ -255,7 +344,8 @@ svg {
     flex-direction: column-reverse;
   }
 
-  body {
-    overflow: hidden !important;
+  .info {
+    width: 100vw;
+    padding:50px;
   }
 }

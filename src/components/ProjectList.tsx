@@ -1,22 +1,21 @@
 import { useState } from "react";
+import FlexWrapper from "./FlexWrapper";
 
-const TechList = () => {
-  const [showStack, setShowStack] = useState<boolean>(false);
+const ProjectList = () => {
+  const [showProjects, setShowProjects] = useState(false);
 
   const handleClick = () => {
-    setShowStack(!showStack);
+    setShowProjects(!showProjects);
   };
-
   return (
     <div
       style={{
-        animation: showStack
+        animation: showProjects
           ? "scaleIn .5s cubic-bezier(0.25, 0.46, 0.45, 0.94)"
           : "scaleOut .5s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
       }}
       className="tech-list"
     >
-
       <h2
         onClick={handleClick}
         style={{
@@ -30,18 +29,17 @@ const TechList = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            animation: !showStack ? "bounce 1s infinite" : "",
+            animation: !showProjects ? "bounce 1s infinite" : "",
           }}
         >
-          {!showStack ? (
+          {!showProjects ? (
             <svg
+              width={25}
+              fill="#575757"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 576 512"
-              width={25}
-              height={25}
-              fill="#575757"
             >
-              <path d="M264.5 5.2c14.9-6.9 32.1-6.9 47 0l218.6 101c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 149.8C37.4 145.8 32 137.3 32 128s5.4-17.9 13.9-21.8L264.5 5.2zM476.9 209.6l53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 277.8C37.4 273.8 32 265.3 32 256s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0l152-70.2zm-152 198.2l152-70.2 53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 405.8C37.4 401.8 32 393.3 32 384s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0z" />
+              <path d="M88.7 223.8L0 375.8V96C0 60.7 28.7 32 64 32H181.5c17 0 33.3 6.7 45.3 18.7l26.5 26.5c12 12 28.3 18.7 45.3 18.7H416c35.3 0 64 28.7 64 64v32H144c-22.8 0-43.8 12.1-55.3 31.8zm27.6 16.1C122.1 230 132.6 224 144 224H544c11.5 0 22 6.1 27.7 16.1s5.7 22.2-.1 32.1l-112 192C453.9 474 443.4 480 432 480H32c-11.5 0-22-6.1-27.7-16.1s-5.7-22.2 .1-32.1l112-192z" />
             </svg>
           ) : (
             <svg
@@ -57,12 +55,14 @@ const TechList = () => {
         </div>
       </h2>
 
-    
-      {showStack ? (
-        <div className="stack">
-          <i className="devicon-react-original" title="React"></i>
+      {showProjects ? (
+        <div className="projects">
+          <FlexWrapper direction="row" gap={10}>
+            <small>  <i className="devicon-github-original"></i>Full Stack Messaging Application </small>
+            <small> <i className="devicon-github-original"></i>React Portfolio Website </small>
+          </FlexWrapper>
 
-          <i className="devicon-typescript-plain" title="TypeScript"></i>
+          {/* <i className="devicon-typescript-plain" title="TypeScript"></i>
 
           <i className="devicon-flask-original" title="Flask"></i>
 
@@ -72,19 +72,17 @@ const TechList = () => {
 
           <i className="devicon-nodejs-plain" title="Node.js"></i>
 
-
-
           <i className="devicon-express-original" title="Express"></i>
 
           <i className="devicon-mongodb-plain" title="MongoDB"></i>
 
           <i className="devicon-graphql-plain" title="GraphQL"></i>
 
-          <i className="devicon-python-plain" title="Python"></i>
+          <i className="devicon-python-plain" title="Python"></i> */}
         </div>
       ) : null}
     </div>
   );
 };
 
-export default TechList;
+export default ProjectList;

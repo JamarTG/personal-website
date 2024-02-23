@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Four04CatGif from "./404CatGit";
+import Four04CatGif from "../components/404CatGit";
 
 const PageNotFound = () => {
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ const PageNotFound = () => {
         }}
       >
         <Four04CatGif />
-        
+
         <br />
       </div>
       <a onClick={() => navigate("/")} className="return-btn">
